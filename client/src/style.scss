@@ -1,5 +1,10 @@
 $lightGreen: #b9e7e7;
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "Consolas", "Courier New", monospace;
+}
+
 .app {
   display: flex;
   justify-content: center;
@@ -170,7 +175,7 @@ $lightGreen: #b9e7e7;
             flex: 3;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            gap: 30px;
 
             h1 {
               font-size: 48px;
@@ -189,7 +194,7 @@ $lightGreen: #b9e7e7;
               border: 1px solid teal;
               color: teal;
 
-              &:hover{
+              &:hover {
                 border: 1px solid white;
                 background-color: $lightGreen;
                 color: black;
@@ -199,5 +204,131 @@ $lightGreen: #b9e7e7;
         }
       }
     }
+
+    // SINGLE
+
+    .single {
+      display: flex;
+      gap: 50px;
+    }
+
+    .content {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        span {
+          font-size: bold;
+        }
+      }
+
+      .edit {
+        display: flex;
+        gap: 5px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+
+      h1 {
+        font-size: 42px;
+        color: #333;
+      }
+
+      p {
+        text-align: justify;
+        line-height: 30px;
+      }
+    }
+
+    .menu {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+
+      h1{
+        font-size: 20px;
+        color: #555;
+      }
+
+      .post{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+        img{
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        h2{
+          color: #555;
+        }
+
+        button {
+          width: max-content;
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border: 1px solid teal;
+          color: teal;
+
+          &:hover {
+            border: 1px solid white;
+            background-color: $lightGreen;
+            color: black;
+          }
+        }
+      }
+    }
+
+    // WRITE
+
+    .write{
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+
+      .content{
+        flex: 5;
+      }
+
+
+      .menu{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
   }
 }
